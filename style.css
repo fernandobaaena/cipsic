@@ -1,10 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Belleza';
+
+body {
+    font-family: 'Belleza', sans-serif;
+    color: #f6dd8b;
+    background-color: #0f526c;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.title-top {
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.container {
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: 5px solid #f6dd8b;
+}
+
+.marca {
+    width: 100%; /* Cambiado para ser completamente responsivo */
+    max-width: 250px; /* Establece un ancho máximo */
+}
+
+.page-grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: auto; /* Cambiado para ajustarse al contenido */
+}
+
+.right-text {
+    font-size: 2.0rem;
+    text-align: center;
+    padding-left: 10%; /* Ajuste de espaciado */
+    padding-right: 10%; /* Ajuste de espaciado */
+
+}
+
+.under-logo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 5%; /* Ajuste de espaciado */
+    padding-right: 5%; /* Ajuste de espaciado */
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    width: 3rem;
+    margin: 1rem; /* Ajuste de margen */
+}
+
+.contact-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Media queries para hacer el diseño responsive */
+
+@media only screen and (max-width: 768px) {
+    .page-grid {
+        grid-template-columns: 100%; /* Cambia a una sola columna en pantallas pequeñas */
+    }
+    .right-text,
+    .under-logo {
+        padding-left: 5%; /* Ajuste de espaciado */
+        padding-right: 5%; /* Ajuste de espaciado */
+    }
+   
+}
+@media only screen and (max-width: 480px) {
+    .right-text,
+    .under-logo {
+        font-size: 1.7rem; 
+        padding-left: 3%; 
+        padding-right: 3%; 
+    }
+    .right-text{
+        margin-top: 10%;
+    }
+    .contact {
+        width: 2rem; 
+        margin: 0.5rem; 
+    }
 }
