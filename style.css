@@ -69,7 +69,10 @@ h1 {
     flex-direction: row;
     align-items: center;
 }
-
+.working-site{
+    width: 35rem;
+    margin: 0 auto;
+}
 /* Media queries para hacer el diseño responsive */
 
 @media only screen and (max-width: 768px) {
@@ -85,7 +88,11 @@ h1 {
     .right-text{
         margin-top: 5%;
     }
-   
+    .working-site{
+        width: 25rem;
+        margin: 0 auto;
+    }
+
 }
 @media only screen and (max-width: 480px) {
     .right-text,
@@ -100,5 +107,9 @@ h1 {
     .contact {
         width: 2rem; 
         margin: 0.5rem; 
+    }
+    .working-site{
+        width: 15rem;
+        margin: 0 auto;
     }
 }
