@@ -87,12 +87,18 @@ h1 {
 
     .right-text{
         margin-top: 5%;
+        font-size: 1.8rem;
     }
     .working-site{
         width: 25rem;
         margin: 0 auto;
     }
-
+    #right-container{
+        border: 3px solid #f6dd8b;
+        border-radius: 15px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 }
 @media only screen and (max-width: 480px) {
     .right-text,
@@ -103,6 +109,7 @@ h1 {
     }
     .right-text{
         margin-top: 10%;
+        font-size: 1.8rem;
     }
     .contact {
         width: 2rem; 
@@ -111,5 +118,11 @@ h1 {
     .working-site{
         width: 15rem;
         margin: 0 auto;
+    }
+    #right-container{
+        border: 3px solid #f6dd8b;
+        border-radius: 15px;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 }
