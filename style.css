@@ -37,7 +37,7 @@ h1 {
     grid-template-rows: auto; /* Cambiado para ajustarse al contenido */
 }
 .right-text {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
     padding-left: 10%; /* Ajuste de espaciado */
     padding-right: 10%; /* Ajuste de espaciado */
@@ -115,21 +115,11 @@ h1 {
         width: 2rem; 
         margin: 0.5rem; 
     }
-    .working-site{
-        width: 15rem;
-        margin: 0 auto;
-    }
+ 
     #right-container{
         border: 3px solid #f6dd8b;
         border-radius: 15px;
         margin-left: 3%;
         margin-right: 3%;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .working-site{
-        width: 15rem;
-        margin: 0 auto;
     }
 }
