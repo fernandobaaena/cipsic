@@ -125,3 +125,10 @@ h1 {
         margin-right: 3%;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .working-site{
+        width: 15rem;
+        margin: 0 auto;
+    }
+}
