@@ -41,7 +41,7 @@ h1 {
     text-align: center;
     padding-left: 5%; 
     padding-right: 5%; 
-
+    
 }
 .under-logo {
     font-size: 1.5rem;
@@ -55,6 +55,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fade-in 1.5s forwards; 
 }
 .contact {
     width: 3rem;
@@ -64,20 +65,27 @@ h1 {
     border: 5px solid #f6dd8b;
     border-radius: 15px;
     margin-top: 5%; 
-    position: relative;
     width: fit-content; 
-    max-width: 80%; 
-    margin: 0 auto;
+    max-width: 85%; 
+    max-height: 80%;
+    opacity: 0; 
+    animation: fade-in 1.5s forwards; 
 }
 .contact-img {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.working-site{
-    width: 30rem;
-    margin: 0 auto;
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 /* Media queries para hacer el diseño responsive */
 
 @media only screen and (max-width: 768px) {
@@ -101,7 +109,7 @@ h1 {
     #right-container{
         border: 3px solid #f6dd8b;
         border-radius: 15px;
-        margin-left: 3%;
+        margin-left: 8%;
         margin-right: 3%;
     }
 }
@@ -124,7 +132,7 @@ h1 {
     #right-container{
         border: 3px solid #f6dd8b;
         border-radius: 15px;
-        margin-left: 3%;
         margin-right: 3%;
+        padding-bottom: 5%;
     }
 }
